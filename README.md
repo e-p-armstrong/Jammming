@@ -1,4 +1,36 @@
-# Getting Started with Create React App
+# THE COOLEST THING I HAVE DONE TO DATE! (Date: May 19 2022)
+
+This web app displays and has functionality coded with React, and uses the Spotify API to allow a user to search for songs and make playlists. You can find a live version of this at evancanintoreact.surge.sh .
+
+This project makes my previous ones look like console.log("Hello world!") in comparison. I am so goddamn proud of it.
+
+I used things like:
+- React, to make a bunch of components (Some functional, some class) and have them pass info between each other
+- Promises
+- fetch requests
+- The Spotify API, to get user data and post data acquired through interactions with the app
+- surge, to deploy it
+- npm 
+
+Many console.logs were harmed in the debugging of this project.
+
+Stuff that is here which I did not make:
+- The CSS
+- The images
+- The name
+- I made the JSX components, but their original iterations were based off of HTML provided by Codecademy. Their instructions are usually just commented out, you can probably see where their stuff ends and mine begins.
+
+## Note
+
+The first time you search for something during a session it might bug out and reload the page, but the subsequent times will work. I will probably fix this soon.
+
+## The default values (explanation)
+
+The default values for the playlist and song are jokes (most of them related to my book, Humanity Endures) that won't actually work if you try to do stuff with them. 
+
+This is the end of my notes, the rest is react boilerplate that I left intact because I *think* it's convention to do that. 
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
