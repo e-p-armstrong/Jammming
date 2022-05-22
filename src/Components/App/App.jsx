@@ -18,7 +18,7 @@ class App extends React.Component{
         {name: "Photon's Termination -requiem-", artist: "The Prime Admiral", album: "Regret, regret, regret", id: 1048596}
       ],
       playlistName: "New Playlist",
-      playlistTracks: [{Name: "The only good bug...", Artist: "Private Hudson", Album: "NUKE IT FROM ORBIT", ID: 123, URI: 'spotify:someuri'}]
+      playlistTracks: [{name: "GATE OF STEINER -Piano-", artist: "Takeshi Abo", album: "STEINS;GATE Original Soundtrack", id: "1EyeHLX96JGGiF2l4tRvJR", uri: "spotify:track:1EyeHLX96JGGiF2l4tRvJR"}]
     }
     this.addTrack           = this.addTrack.bind(this)
     this.removeTrack        = this.removeTrack.bind(this)
@@ -71,7 +71,16 @@ class App extends React.Component{
     console.log(term);
     Spotify.search(term).then((result)=>{
       console.log("This was the search result array",result)
-      this.setState({searchResults : result})  
+      const filteredResult = result.filter(track =>{ //Compares each track in the search result to every track in the playlist. If the track is in the playlist, it is filtered out of the search results.
+        let isInPlaylist = false;
+        this.state.playlistTracks.forEach(playlistTrack =>{
+          if(track.id === playlistTrack.id){
+            isInPlaylist = true;
+          }
+        });
+        return !(isInPlaylist);
+      })
+      this.setState({searchResults : filteredResult})  
     });
     
 
