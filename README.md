@@ -1,4 +1,4 @@
-# The Coolest Thing I have done so far
+# The Coolest Thing I had done before I worked at Leanpub
 
 This web app displays and has functionality coded with React, and uses the Spotify API to allow a user to search for songs and make playlists. You can find a live version of this at evancanintoreact.surge.sh .
 
